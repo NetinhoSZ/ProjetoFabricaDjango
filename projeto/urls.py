@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from blog.views import alecrim, dourado
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('alecrim/', alecrim),
+    path('dourado/', dourado),
 ]
